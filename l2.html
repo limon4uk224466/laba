@@ -1,0 +1,128 @@
+<html>
+	
+	<head>
+		<title>Регистрация</title>
+		<script type="text/javascript" src="l2.js"></script>
+	</head>
+	
+	<body>
+		
+		<h2>Регистрация на сайте</h2>
+		
+		<form action="l2.php" method="POST" name="form" onsubmit="return validateForm()">
+			
+			<table>
+				
+				<tr>
+					<td>Имя:</td>
+					<td><input type="text" name="name" id="name"></td>
+				</tr>
+				
+				<tr>
+					<td>Фамилия:</td>
+					<td><input type="text" name="pha" id="pha"></td>
+				</tr>
+				
+				<tr>
+					<td>Место проживания:</td>
+					<td>
+						<select name="mesto">
+							<option>Россия, Москва</option>
+							<option>Россия, Хабаровск</option>
+							<option>Япония, Токио</option>
+							<option>Тайланд, Патайа</option>
+							<option>Россия, Владивосток</option>
+						</select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Адрес:</td>
+					<td><input type="text" name="adres" id="adres"></td>
+				</tr>
+				
+				<tr>
+					<td>Почтовый индекс:</td>
+					<td><input type="text" size="6" name="index" id="index" pattern="[0-9]{6}"></td>
+				</tr>
+				
+				<tr>
+					<td>Телефон:</td>
+					<td><input type="tel" size="12" name="tel" id="tel" ></td>
+				</tr>
+				
+				<tr>
+					<td>Дата рождения:</td>
+					<td><input type="date" name="date" id="date"></td>
+				</tr>
+				
+				<tr>
+					<td>Пол:</td>
+					<td><input type="radio" name="pol" value="Мужской" checked>Мужской <input type="radio" name="pol" value="Женский">Женский</td>
+				</tr>
+				
+				<tr>
+					<td align="right"><input type="checkbox" name="vop1"></td>
+					<td>Использовать e-mail в качестве логина</td>
+				</tr>
+				
+				<tr>
+					<td>Пароль:</td>
+					<td><input type="password" name="pas1" id="pas1"></td>
+				</tr>
+				
+				<tr>
+					<td>Подтверждение пароля:</td>
+					<td><input type="password" name="pas2" id="pas2"></td>
+				</tr>
+				
+				<tr>
+					<td>Секретный вопрос:</td>
+					<td><select name="vopros">
+						<option>Кличка питомца</option>
+						<option>Любимая книга</option>
+						<option>Любимый фильм</option>
+						<option>Секрет</option>
+					</select></td>
+				</tr>
+				
+				<tr>
+					<td>Ответ на секретный вопрос:</td>
+					<td><input type="text" name="otvet" id="otvet"></td>
+				</tr>
+				
+				<tr>
+					<td>Часовой пояс:</td>
+					<td><select name="vremya">
+						<option>(GMT +03:00) Европа/Москва</option>
+						<option>...</option>
+						<option>...</option>
+						<option>...</option>
+					</select></td>
+				</tr>
+				
+				<tr>
+					<td align="right"><input type="checkbox" name="vop2"></td>
+					<td>Получать уведомления о проведении операций</td>
+				</tr>
+				
+				<tr>
+					<td align="right"><input type="checkbox" name="vop3"></td>
+					<td>Получать новости</td>
+				</tr>
+				
+				<tr>
+					<td align="right"><input type="checkbox" name="vop4" ></td>
+					<td>Я принимаю условия сервиса</td>
+				</tr>
+				
+				<tr>
+				<td colspan="2" align="center"><input type="submit" value="Регистрация" name="reg"></td>
+				</tr>
+			</table>
+		
+		</form>
+	
+	</body>
+
+</html>
